@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Heart, Chrome as Home, ClipboardList } from 'lucide-react-native';
+import { Heart, Chrome as Home, ClipboardList, LogIn } from 'lucide-react-native';
 import { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -69,6 +69,15 @@ export default function TabLayout() {
             backgroundColor: '#4ECDC4',
             color: 'white',
           },
+        }}
+      />
+      <Tabs.Screen
+        name="login"
+        options={{
+          title: 'Login',
+          tabBarIcon: ({ size, color }) => (
+            <LogIn size={size} color={color} />
+          ),
         }}
       />
     </Tabs>
