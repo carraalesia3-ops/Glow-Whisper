@@ -31,6 +31,7 @@ export default function LandingPage() {
           </View>
           
           <Text style={styles.title}>SkinCare AI</Text>
+          <Text style={styles.title}>Glow Whisper</Text>
           <Text style={styles.subtitle}>
             Your Personal Skincare Journey Starts Here
           </Text>
